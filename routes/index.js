@@ -7,12 +7,35 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+var dingTalkMeg = {
+    "msgtype": "markdown",
+    "markdown": {
+        "title":"杭州天气",
+        "text": "#### 杭州天气 @156xxxx8827\n" +
+        "> 9度，西北风1级，空气良89，相对温度73%\n\n" +
+        "> ![screenshot](http://image.jpg)\n"  +
+        "> ###### 10点20分发布 [天气](http://www.thinkpage.cn/) \n"
+    }
+
+};
+
 // 创建 application/x-www-form-urlencoded 编码解析
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 router.post('/notify', function (req, res, next) {
     console.log(req.body);
+    var data = req.body;
+    var title = data.title;
+    var url = data.url;
+    var replyName = data.comments[0].user.nickname;
+    var content = data.comments[0].content;
+    var text = "#### " + title + " \n" +
+    "> 收到"+ replyName +" 的评论\n\n" +
+    "> ![screenshot](http://image.jpg)\n"  +
+    "> ###### " + content +" [点我]("+ url +") \n";
 
-    var contents = JSON.stringify(req.body);
+    dingTalkMeg.markdown.text = text;
+
+    var contents = JSON.stringify(dingTalkMeg);
     var options = {
         protocol:'https:',
         port:443,
@@ -38,6 +61,7 @@ router.post('/notify', function (req, res, next) {
     });
     reqNew.write(contents);
     reqNew.end();
+    res.end();
 
 });
 module.exports = router;
