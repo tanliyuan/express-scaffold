@@ -1,0 +1,4 @@
+{
+    "appenders" : { "cheese": { "type": "console" } },
+    "categories" : { "default": { "appenders": ["cheese"], "level": "info" } }
+}

@@ -1,17 +1,29 @@
 {
-  "name": "node",
+  "name": "nodeweb",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "axios": "^0.17.0",
     "body-parser": "~1.18.2",
+    "config": "^1.28.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "error": "^7.0.2",
     "express": "~4.15.5",
     "jade": "~1.11.0",
+    "log4js": "^2.3.11",
+    "lowdb": "^1.0.0",
     "morgan": "~1.9.0",
+    "node-rest-client": "^3.1.0",
+    "request": "^2.83.0",
     "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "mocha": "^4.0.1",
+    "should": "^13.1.3"
   }
 }
