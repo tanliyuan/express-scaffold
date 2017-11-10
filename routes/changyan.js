@@ -2,7 +2,6 @@ const request = require('request');
 var express = require('express');
 var router = express.Router();
 const logger = require('../support/log4js').getLogger(__filename);
-logger.info('哈哈哈');
 
 let dingTalkMeg = {
     "msgtype": "markdown",
@@ -31,7 +30,6 @@ router.post('/notify', function (req, res, next) {
 
     dingTalkMeg.markdown.text = text;
 
-    let contents = JSON.stringify(dingTalkMeg);
     let options = {
         uri: 'https://oapi.dingtalk.com/robot/send?access_token=c839cdf06522bf8a5c27f84f9e6d8fadbdfff80bb5d2f8568ab29c801c2d4172',
         method: 'post',
