@@ -18,6 +18,8 @@ let dingTalkMeg = {
 
 router.post('/notify', function (req, res, next) {
 
+    res.end();
+
     let data = req.body;
     let title = data.title;
     let url = data.url;
@@ -43,8 +45,12 @@ router.post('/notify', function (req, res, next) {
         logger.info(body);
     });
 
-    res.end();
 });
+
+/* GET users listing. */
+router.get('/tanliyuan', function(req, res, next) {
+    res.send('respond with a resource');
+  });
 
 exports.router = router;
 exports.baseUrl = '/changyan';
