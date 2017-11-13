@@ -5,6 +5,13 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var loadroutes = require('./support/loadroutes');
+
+var config = require('config');
+
+// session 存储到mongodb
+var session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
+
 var app = express();
 
 // const logger = require('./support/log4js').getLogger(__filename);
@@ -17,7 +24,18 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+
+app.use(cookieParser(config.get('secret')));
+app.use(session({
+  secret: config.get('secret'),//与cookieParser中的一致
+  resave: true,
+  saveUninitialized: false,
+  name: 'sessionId',
+  store : new MongoStore({ 
+      url: config.get('db_url')
+   })
+}));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 
