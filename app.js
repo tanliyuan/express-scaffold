@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var loadroutes = require('./support/loadroutes');
 var app = express();
 
+// const logger = require('./support/log4js').getLogger(__filename);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -18,6 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 //自动载入 routes文件夹下的路由
 loadroutes(app);

@@ -41,16 +41,18 @@ router.post('/notify', function (req, res, next) {
        json: true,
        body: dingTalkMeg
     };
+
+    //开启代理抓包
+    if(process.env.proxy) {
+        options.proxy = process.env.proxy;
+        options.strictSSL = false;
+    }
+
     request(options, function(error, response, body){
         logger.info(body);
     });
 
 });
-
-/* GET users listing. */
-router.get('/tanliyuan', function(req, res, next) {
-    res.send('respond with a resource');
-  });
 
 exports.router = router;
 exports.baseUrl = '/changyan';

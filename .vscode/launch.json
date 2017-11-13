@@ -15,8 +15,11 @@
             "request": "launch",
             "name": "dev",
             "program": "${workspaceFolder}\\bin\\www",
+            "cwd": "${workspaceFolder}",
             "env": {
-                "NODE_ENV": "dev"
+                "NODE_ENV": "dev",
+                "DEBUG": "express:*"
+                // "proxy": "http://localhost:8888"
             }
         }
     ]
