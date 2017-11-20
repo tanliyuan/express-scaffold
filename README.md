@@ -10,8 +10,14 @@
 
 ---
 
-**推荐云 `NoSql` 数据库**
+**推荐两个国外免费云 `NoSql` 数据库**
 > 申请账号需要自备梯子，之后连接数据库使用过程不需要
 
-* [redislabs](https://app.redislabs.com)
+* [redislabs (reids)](https://app.redislabs.com)
+
+    有 `30M` 的免费空间 
+    
+    通过设置 `RedisStore` 的 `option` `{saveUninitialized: false}`, 只存储登录会话来减少空间占用，用来存储演示项目的 `session` 绰绰有余了. 
 * [mlab (mongodb)](https://mlab.com)
+    
+    有 `500M` 的免费空间
