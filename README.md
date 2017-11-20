@@ -10,7 +10,7 @@
 
 ---
 
-*** 推荐云 `NoSql` 数据库 ***
+**推荐云 `NoSql` 数据库**
 > 申请账号需要自备梯子，之后连接数据库使用过程不需要
 
 * [redislabs](https://app.redislabs.com)
