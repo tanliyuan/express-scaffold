@@ -1,7 +1,15 @@
 {
     "name": "dev",
     "secret": "sessionId",
+
+    //mongodb 配置
     "db_username": "tanliyuan",
     "db_passwd": "tanliyuan123",
-    "db_url": "mongodb://tanliyuan:tanliyuan123@ds044689.mlab.com:44689/mlab"
+    "db_url": "mongodb://tanliyuan:tanliyuan123@ds044689.mlab.com:44689/mlab",
+
+    //redis session配置
+    "port": 18769,
+    "db": 0,
+    "pass": "tanliyuan123",
+    "host": "redis-18769.c17.us-east-1-4.ec2.cloud.redislabs.com"
 }

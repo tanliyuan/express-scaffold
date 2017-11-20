@@ -7,5 +7,5 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-exports.router = router;
-exports.baseUrl = '/';
+router.baseUrl = '/';
+module.exports = router;

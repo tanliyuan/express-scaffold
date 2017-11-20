@@ -54,5 +54,5 @@ router.post('/notify', function (req, res, next) {
 
 });
 
-exports.router = router;
-exports.baseUrl = '/changyan';
+router.baseUrl = '/changyan';
+module.exports = router;

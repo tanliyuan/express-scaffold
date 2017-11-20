@@ -4,13 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+
+var session = require('./support/session');
 var loadroutes = require('./support/loadroutes');
+var loadModels = require('./support/loadModels');
 
 var config = require('config');
-
-// session 存储到mongodb
-var session = require('express-session');
-const MongoStore = require('connect-mongo')(session);
 
 var app = express();
 
@@ -26,21 +25,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(cookieParser(config.get('secret')));
-app.use(session({
-  secret: config.get('secret'),//与cookieParser中的一致
-  resave: true,
-  saveUninitialized: false,
-  name: 'sessionId',
-  store : new MongoStore({ 
-      url: config.get('db_url')
-   })
-}));
+
+//session配置
+session(app);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-
 //自动载入 routes文件夹下的路由
 loadroutes(app);
+
+// 连接数据库
+loadModels(app);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
