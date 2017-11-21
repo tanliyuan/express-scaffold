@@ -3,14 +3,31 @@ var config = require('config');
 var logger = require('../support/log4js').getLogger(__filename);
 
 mongoose.connect(config.get('db_url'), {
-
-}, function(err) {
-    if(err) {
-            logger.error('connect to %s error: ', config.get('db_url'), err.message);
-            process.exit(1);
-    } else {
-        logger.info('db connect success (^_^) !');
+    server: {
+       autoReconnect: true
     }
+});
+
+var db = mongoose.connection;
+
+db.on('opening', () => {
+    logger.info('Database connecting.... %d ', db.readyState);
+});
+
+db.on('open', () => {
+    logger.info('Database connection opened (＾＿＾)☆');
+});
+
+db.on('error', (err) => {
+    logger.error('Database connection error (T＿T) %s', err);
+});
+
+db.on('reconnected', () => {
+    logger.info('Database reconnected (*ﾟﾛﾟ)');
+});
+
+db.on('disconnected', () => {
+    logger.error('Database disconnected (*ﾟﾛﾟ) ');
 });
 
 module.exports = mongoose;

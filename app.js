@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+const swaggerUi = require('swagger-ui-express');
 
 var session = require('./support/session');
 var loadroutes = require('./support/loadroutes');
@@ -30,9 +31,13 @@ app.use(cookieParser(config.get('secret')));
 session(app);
 
 app.use(express.static(path.join(__dirname, 'public')));
+//swagger-ui 静态资源
+app.use(config.get('api_url'), swaggerUi.serve);
 
 //自动载入 routes文件夹下的路由
 loadroutes(app);
+
+//要放在路由后面
 
 // 连接数据库
 loadModels(app);
