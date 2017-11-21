@@ -3,6 +3,7 @@
 
 主要新增了如下常用基础设施功能：
 * `config` 多环境配置文件，在 `config` 目录下, `default.json` 公共配置文件，`dev.json` 、 `prod.json` 会覆盖 `default.json` 中同名配置
+* 引入 `swagger-ui` 和 `swagger-jsdoc`, 可以通过 `jsDoc` 注解生成 `api` 文档, `swagger-ui` 访问路径 http://localhost:3000/api/, `json` 格式路径  http://localhost:3000/api/api-docs.json
 * `log4js` 日志记录
 * 自动加载 `routes` 目录下的路由,增加路由映射时，不再需要手动添加 `app.use('\**', router)`
 * 集成 `express-session`、 `connect-redis` , 存储 `session` 至 `redis`
