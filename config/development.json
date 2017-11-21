@@ -1,0 +1,13 @@
+{
+    "name": "development",
+    "secret": "sessionId",
+
+    //mongodb 配置
+    "db_url": "mongodb://<username>:<passwd>@127.0.0.1:27017/<dbname>",
+
+    //redis session配置
+    "port": 6379,
+    "db": 0,
+    "pass": "",
+    "host": "127.0.0.1"
+}

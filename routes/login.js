@@ -11,7 +11,7 @@ router.post('/login', function(req, res, next){
         session.user = {
             "name": "tan",
             "age": 30
-        }
+        };
 
         result.success = true;
     } else {
