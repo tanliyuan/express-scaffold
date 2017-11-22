@@ -11,7 +11,7 @@ var userService = require('../services/userService');
    *       200:
    *         description: hello world
    */
-router.get('/:name', function(req, res, next) {
+router.get('/:name',  function(req, res, next) {
     let userName = req.params.name;
     userService.getUserByLoginName(userName, function(err, user) {
         if (err) {
