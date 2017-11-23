@@ -9,6 +9,7 @@
 * 引入 `swagger-ui` 和 `swagger-jsdoc`, 可以通过 `jsDoc` 注解生成 `api` 文档, `swagger-ui` 访问路径 http://localhost:3000/api/, `json` 格式路径  http://localhost:3000/api/api-docs.json
 * 引入基于 `redis` 持久化的 `api` 访问限流, 暂时演示所有链接每个IP每分钟只能访问 2 次
 * 集成 `acl` 库权限控制，初始 `mongodb` 数据在 `db\acl_resources.json`, 暂时演示仅在 `\user\save` 加了权限控制
+* `mocha` 测试报告
 * `log4js` 日志记录
 * 自动加载 `routes` 目录下的路由,增加路由映射时，不再需要手动添加 `app.use('\**', router)`
 * 集成 `express-session`、 `connect-redis` , 存储 `session` 至 `redis`
@@ -70,7 +71,27 @@
         }
 ```
 
-4. 启动  http://localhost:3000
+4. 可以通过如下三种方式运行测试用例, 会在项目根目录下生成 `mochawesome-report` 测试报告  
+
+    1. 如果全局安装了 `mocha` , 可以直接在项目根目录下执行
+
+        ```javascript
+            mocha
+        ```
+        `mocha` 默认会执行 `test` 目录下的测试用例，如果 `test` 目录下存在 `mocha.opts` 文件，则会将其内容作为参数, 所以等同于执行如下命令 :
+
+        ```javascript
+            mocha --u tdd --colors ./test --reporter mochawesome
+        ```
+
+    2. 如果使用的是 `vscode` 开发工具, 可以进入 `debug` 模式，运行 `Mocha Tests` 配置, 具体配置可以查看 `.vscode\launch.json` , 实际运行命令同上
+
+    3. 亦可以根目录下执行 
+        ```javascript
+            npm test
+        ```
+> 注意 `2、3` 中实际运行的是 `_mocha` 命令，用的是项目模块安装的 `mocha`, `1` 中使用的是全局安装的 `mocha`, 某些情况下，你的这两个版本可能不一致
+5. 启动  http://localhost:3000
 
 ```javascript
         npm start

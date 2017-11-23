@@ -5,3 +5,4 @@ node_modules
 .idea/
 local.json
 jsdoc
+mochawesome-report
