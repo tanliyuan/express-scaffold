@@ -9,13 +9,15 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 const swaggerUi = require('swagger-ui-express');
 var path = require('path');
+var config = require('config');
 
 var session = require('./session');
 var loadroutes = require('./loadroutes');
 var loadModels = require('./loadModels');
 var limitMiddleware = require('./rateLimit');
+    require('./mongodb');
+var acl = require('./acl');
 
-var config = require('config');
 
 module.exports = app => {
     // uncomment after placing your favicon in /public
@@ -38,10 +40,11 @@ module.exports = app => {
     //  apply to all requests 
     app.use(limitMiddleware);
 
+    // app.use(acl.middleware());
+
     //自动载入 routes文件夹下的路由
     loadroutes(app);
 
-
-    // 连接数据库
+    // 载入models
     loadModels(app);
 };

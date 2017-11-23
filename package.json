@@ -7,8 +7,11 @@
     "jsdoc": "jsdoc --configure .jsdocconf"
   },
   "dependencies": {
+    "acl": "^0.4.11",
     "axios": "^0.17.0",
+    "bluebird": "^3.5.1",
     "body-parser": "~1.18.2",
+    "check-types": "^7.3.0",
     "colors": "^1.1.2",
     "config": "^1.28.0",
     "connect-mongo": "^2.0.0",

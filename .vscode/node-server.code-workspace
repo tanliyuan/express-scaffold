@@ -1,12 +1,17 @@
 {
 	"folders": [
-		 
-		 {
-			"path": "D:\\IDEA-project\\node-server"		 
+
+		{
+			"path": "D:\\IDEA-project\\node-server"
 		}
-		],
+	],
 
 	"settings": {
-		"git.ignoreLimitWarning": true
+		"git.ignoreLimitWarning": true,
+		"files.exclude": {
+			"**/node_modules": false 
+		}
 	}
+
+
 }

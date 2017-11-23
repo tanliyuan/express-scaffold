@@ -1,0 +1,58 @@
+{
+	"_bucketname" : "meta",
+	"_id" : ObjectId("5a157b0a6fdb4f358af023df"),
+	"guest" : true,
+	"key" : "roles",
+	"member" : true
+},
+{
+	"_bucketname" : "allows_blogs",
+	"_id" : ObjectId("5a157b0d6fdb4f358af02411"),
+	"key" : "guest",
+	"view" : true
+},
+{
+	"_bucketname" : "allows_blogs",
+	"_id" : ObjectId("5a157b0d6fdb4f358af02414"),
+	"delete" : true,
+	"edit" : true,
+	"key" : "member",
+	"view" : true
+},
+{
+	"%2Fuser%2Fsave" : true,
+	"_bucketname" : "resources",
+	"_id" : ObjectId("5a157b0d6fdb4f358af0241c"),
+	"blogs" : true,
+	"key" : "guest"
+},
+{
+	"_bucketname" : "resources",
+	"_id" : ObjectId("5a157b0d6fdb4f358af02428"),
+	"blogs" : true,
+	"key" : "member"
+},
+{
+	"_bucketname" : "meta",
+	"_id" : ObjectId("5a1678c56fdb4f358a0016f9"),
+	"key" : "users",
+	"tanliyuan" : true
+},
+{
+	"_bucketname" : "allows_/user/save",
+	"_id" : ObjectId("5a1678c76fdb4f358a001723"),
+	"key" : "guest",
+	"post" : true
+},
+{
+	"_bucketname" : "users",
+	"_id" : ObjectId("5a1678c96fdb4f358a001744"),
+	"guest" : true,
+	"key" : "tanliyuan"
+},
+{
+	"_bucketname" : "roles",
+	"_id" : ObjectId("5a1678c96fdb4f358a001753"),
+	"key" : "guest",
+	"tanliyuan" : true
+},
