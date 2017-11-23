@@ -18,7 +18,7 @@
 ---
 
 ## **推荐两个国外免费云 `NoSql` 数据库**
-> 申请账号需要自备梯子，之后连接数据库使用过程不需要
+> ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) 申请账号需要自备梯子，之后连接数据库使用过程不需要
 
 * [redislabs (reids)](https://app.redislabs.com)
 
@@ -52,7 +52,7 @@
         "host": "127.0.0.1",
 ```
 
-3. 如果使用的是 `VSCode` 开发环境, 根据需要修改 `.vscode\launch.json`
+3. 可选，如果使用的是 `VSCode` 开发环境, 根据需要修改 `.vscode\launch.json`
 
 ```javascript
         {
@@ -90,7 +90,7 @@
         ```javascript
             npm test
         ```
-> 注意 `2、3` 中实际运行的是 `_mocha` 命令，用的是项目模块安装的 `mocha`, `1` 中使用的是全局安装的 `mocha`, 某些情况下，你的这两个版本可能不一致
+> ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) 注意 `2、3` 中实际运行的是 `_mocha` 命令，用的是项目模块安装的 `mocha`, `1` 中使用的是全局安装的 `mocha`, 某些情况下，你的这两个版本可能不一致
 5. 启动  http://localhost:3000
 
 ```javascript
