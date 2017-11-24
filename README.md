@@ -1,12 +1,14 @@
 # `express-scaffold`
 
+**`DEMO` 地址：** https://node.tanliyuan.top
+
 ---
 
 ## 基于 `express-generator` 扩展的脚手架
 
 主要新增了如下常用基础设施功能：
 * `config` 多环境配置文件，在 `config` 目录下, `default.json` 公共配置文件，`dev.json` 、 `prod.json` 会覆盖 `default.json` 中同名配置
-* 引入 `swagger-ui` 和 `swagger-jsdoc`, 可以通过 `jsDoc` 注解生成 `api` 文档, `swagger-ui` 访问路径 http://localhost:3000/api/, `json` 格式路径  http://localhost:3000/api/api-docs.json
+* 引入 `swagger-ui` 和 `swagger-jsdoc`, 可以通过 `jsDoc` 注解生成 `api` 文档, `swagger-ui` 访问路径 https://node.tanliyuan.top/api/, `json` 格式路径  https://node.tanliyuan.top/api/api-docs.json
 * 引入基于 `redis` 持久化的 `api` 访问限流, 暂时演示所有链接每个IP每分钟只能访问 2 次
 * 集成 `acl` 库权限控制，初始 `mongodb` 数据在 `db\acl_resources.json`, 暂时演示仅在 `\user\save` 加了权限控制
 * `mocha` 测试报告
@@ -109,7 +111,7 @@
 
 ## 计划中
 
-- [ ] 线上 `demo`
+- [x] 线上 `demo`   ![#00CC00](https://placehold.it/15/00CC00/000000?text=+) `2017-11-24 15:08:32`
 - [ ] 统一的异常处理
 - [ ] 添加测试用例, 增加 `postman` 文件，方便使用者调试
 
