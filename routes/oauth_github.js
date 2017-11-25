@@ -18,8 +18,8 @@ router.get('/github/auth', function(req, res, next) {
             return popsicle.request(user.sign({
                 method: 'get',
                 url: 'https://api.github.com/user'
-              })).then(function(userInfo) {
-                logger.info(userInfo);
+              })).use(popsicle.plugins.parse(['json', 'urlencoded'])).then(function(userInfo) {
+                logger.info(userInfo.body);
 
                 res.render('index', {title : userInfo.body.login});
             }).catch(function(err) {
