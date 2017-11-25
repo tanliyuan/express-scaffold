@@ -8,6 +8,7 @@ var app = express();
 
 // const logger = require('./support/log4js').getLogger(__filename);
 // view engine setup
+console.log(path.join(__dirname, 'views'));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
