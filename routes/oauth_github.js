@@ -22,6 +22,8 @@ router.get('/github/auth', function(req, res, next) {
                 logger.info(userInfo);
 
                 res.render('index', {title : userInfo.body});
+            }).catch(function(err) {
+                logger.error(err);
             });
         });
 
