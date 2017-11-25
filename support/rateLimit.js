@@ -14,8 +14,8 @@ module.exports = new RateLimit({
   keyGenerator: function(req) {
     logger.info('X-Real-IP: %s; X-Forwarded-For: %s; req.ip: %s', req.get("X-Real-IP"), req.get("X-Forwarded-For"), req.ip);
 
-      let real_ip =  req.get("X-Forwarded-For").split(',')[0] || req.get("X-Real-IP") || req.ip;  
+      let real_ip =  req.get("X-Forwarded-For") ? req.get("X-Forwarded-For").split(',')[0] : (req.get("X-Real-IP") || req.ip);  
       return real_ip;
   },
-  message: '目前限流 QPS: 10req/ip/min'
+  message: '目前限流 QPS: 4req/ip/min'
 });
