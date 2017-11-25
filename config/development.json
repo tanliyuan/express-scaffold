@@ -1,5 +1,6 @@
 {
     "name": "development",
+    "domain": "your domain", //非必须，目前仅用于UUID生成
     "secret": "sessionId",
 
     //mongodb 配置
@@ -12,5 +13,11 @@
     "host": "127.0.0.1",
 
     //swagger api docs 配置
-    "api_url": "/api"
+    "api_url": "/api",
+
+    // github oauth
+    "client_id": "",
+    "client_secret": "",
+    "redirect_uri": ""
+
 }

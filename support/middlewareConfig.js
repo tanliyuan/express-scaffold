@@ -33,7 +33,7 @@ module.exports = app => {
     //session配置
     session(app);
 
-    app.use(express.static(path.join(__dirname, 'public')));
+    app.use(express.static(process.cwd() + '\\public'));
     //swagger-ui 静态资源
     app.use(config.get('api_url'), swaggerUi.serve);
 
