@@ -1,5 +1,3 @@
-import { log } from 'util';
-
 var  router = require('express').Router();
 var request = require('request');
 
