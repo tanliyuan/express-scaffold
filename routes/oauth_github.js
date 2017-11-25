@@ -1,5 +1,5 @@
 var  router = require('express').Router();
-var request = require('request');
+var popsicle = require('popsicle');
 
 var logger = require('../support/log4js').getLogger(__filename);
 var githubAuth = require('../support/oauth_github');
@@ -15,15 +15,13 @@ router.get('/github/auth', function(req, res, next) {
         .then(function(user) {
             logger.info(user);
 
-            let userInfoReq = user.sign({
+            return popsicle.request(user.sign({
                 method: 'get',
                 url: 'https://api.github.com/user'
-              });
-
-            request(userInfoReq).then(function(userInfo) {
+              })).then(function(userInfo) {
                 logger.info(userInfo);
 
-                res.render('index', {title : userInfo});
+                res.render('index', {title : userInfo.body});
             });
         });
 
