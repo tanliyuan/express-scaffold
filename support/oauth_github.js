@@ -8,7 +8,7 @@ var githubAuth = new ClientOAuth2({
     clientSecret: config.client_secret,
     accessTokenUri: 'https://github.com/login/oauth/access_token',
     authorizationUri: 'https://github.com/login/oauth/authorize',
-    redirectUri: config.redirect_rri,
+    redirectUri: config.redirect_uri,
     scopes: ['user', 'gist'],
     state: uuidV5(config.domain, uuidV5.URL)
 });
