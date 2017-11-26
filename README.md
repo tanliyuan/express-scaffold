@@ -119,6 +119,19 @@
 
 ---
 
+## `DEMO` 环境概况
+
++ 阿里云 `ECS` 1G 1核
++ 阿里云免费 `https` 证书
++ `nginx` 域名转发
+    > 其他域名站点：  
+    > > + https://www.tanliyuan.top (博客)
+    > > +  https://react.tanliyuan.top (react后台管理系统)
+    > > + https://jenkins.tanliyuan.top (用于发布博客、react、node等子站点)
++ 360网站卫士免费 `CDN` 加速、心跳监测、安全防护
+
+---
+
 ## 计划中
 
 - [x] 线上 `demo`   ![#00CC00](https://placehold.it/15/00CC00/000000?text=+) `2017-11-24 15:08:32`
