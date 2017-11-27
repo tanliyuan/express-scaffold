@@ -4,6 +4,20 @@
 
 ---
 
+## `DEMO` 环境概况
+
++ [阿里云免费 `ECS` 1G 1核](https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=3zijnb8k&utm_source=3zijnb8k) (未使用过阿里云产品的用户可以点击链接免费领取)
++ 阿里云免费 `https` 证书
++ `nginx` 域名转发
+    > 其他域名站点：  
+    > > + https://www.tanliyuan.top (博客)
+    > > +  https://react.tanliyuan.top (react后台管理系统)
+    > > + https://jenkins.tanliyuan.top (用于发布博客、react、node等子站点)
++ 360网站卫士免费 `CDN` 加速、心跳监测、安全防护
++ 国外免费的 `NoSQL` 云数据库, 下文有申请链接
+
+---
+
 ## 基于 `express-generator` 扩展的脚手架
 
 主要新增了如下常用基础设施功能：
@@ -119,18 +133,7 @@
 
 ---
 
-## `DEMO` 环境概况
 
-+ 阿里云 `ECS` 1G 1核
-+ 阿里云免费 `https` 证书
-+ `nginx` 域名转发
-    > 其他域名站点：  
-    > > + https://www.tanliyuan.top (博客)
-    > > +  https://react.tanliyuan.top (react后台管理系统)
-    > > + https://jenkins.tanliyuan.top (用于发布博客、react、node等子站点)
-+ 360网站卫士免费 `CDN` 加速、心跳监测、安全防护
-
----
 
 ## 计划中
 
