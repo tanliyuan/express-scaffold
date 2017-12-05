@@ -32,31 +32,16 @@ let wananMsg = {
         "点点滴滴**\n\n" +
         "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
         "她都铭记于心**\n\n" +
-        "> ![screenshot](http://tu-img-1.aixinxi.net/o_1c0imggpt3rkd9kkuv4sbiu5a.jpg-w.jpg)\n",   
-        "hideAvatar": "1", 
-        "btnOrientation": "1", 
-        "btns": [
-            {
-                "title": "稍后提醒", 
-                "actionURL": "https://www.dingtalk.com/"
-            }, 
-            {
-                "title": "已请安", 
-                "actionURL": "https://www.dingtalk.com/"
-            }
-        ]
+        "> ![screenshot](http://tu-img-1.aixinxi.net/o_1c0imggpt3rkd9kkuv4sbiu5a.jpg-w.jpg)\n"  
     },
     "at": {
-        "atMobiles": [
-            "17858636842"
-        ], 
-        "isAtAll": false
+        "isAtAll": true
     }
 };
 
 var wanan = function() {
     let options = {
-        uri: 'https://oapi.dingtalk.com/robot/send?access_token=867146577564d6bfb749c55c44c886ee2de6bb62f31e98bcdcce6e2b38ff27db',
+        uri: 'https://oapi.dingtalk.com/robot/send?access_token=c839cdf06522bf8a5c27f84f9e6d8fadbdfff80bb5d2f8568ab29c801c2d4172',
         method: 'post',
         headers:{
             'Content-Type':'application/json'
