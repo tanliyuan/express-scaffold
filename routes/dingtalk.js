@@ -41,7 +41,7 @@ let wananMsg = {
 
 var wanan = function() {
     let options = {
-        uri: 'https://oapi.dingtalk.com/robot/send?access_token=c839cdf06522bf8a5c27f84f9e6d8fadbdfff80bb5d2f8568ab29c801c2d4172',
+        uri: 'https://oapi.dingtalk.com/robot/send?access_token=867146577564d6bfb749c55c44c886ee2de6bb62f31e98bcdcce6e2b38ff27db',
         method: 'post',
         headers:{
             'Content-Type':'application/json'
