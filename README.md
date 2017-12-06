@@ -41,6 +41,10 @@
 
 * 集成 `mongoose` 连接 `mongodb`, 自动载入 `/models` 目录下 `model`
 
+* 钉钉机器人签到提醒, 目前周一到周五每晚十点, `development.json` 中配置 `dingtalk`， 填写机器人的 `webhook` 
+
+    ![](https://tu-img-1.aixinxi.net/o_1c0ksna5a95a1nru116ba3epha.png-w.jpg)
+
 ---
 
 ## **推荐两个国外免费云 `NoSql` 数据库**

@@ -18,6 +18,9 @@
     // github oauth
     "client_id": "",
     "client_secret": "",
-    "redirect_uri": ""
+    "redirect_uri": "",
+
+    // 钉钉签到机器人提醒
+    "dingtalk": ""
 
 }

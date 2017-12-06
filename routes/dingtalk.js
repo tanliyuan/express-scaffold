@@ -2,6 +2,7 @@ const request = require('request');
 var express = require('express');
 var schedule = require('node-schedule');
 var moment = require('moment');
+var config = require('config');
 var router = express.Router();
 const logger = require('../support/log4js').getLogger(__filename);
 
@@ -41,7 +42,7 @@ let wananMsg = {
 
 var wanan = function() {
     let options = {
-        uri: 'https://oapi.dingtalk.com/robot/send?access_token=867146577564d6bfb749c55c44c886ee2de6bb62f31e98bcdcce6e2b38ff27db',
+        uri: config.get('dingtalk'),
         method: 'post',
         headers:{
             'Content-Type':'application/json'
