@@ -11,6 +11,7 @@ var j = schedule.scheduleJob('0 0 22 * * 1-5', function(){
     wanan();
 });
 
+//   http://tu-img-1.aixinxi.net/o_1c0imggpt3rkd9kkuv4sbiu5a.jpg-w.jpg
 
 let wananMsg = {
     "msgtype": "markdown",
@@ -33,7 +34,7 @@ let wananMsg = {
         "点点滴滴**\n\n" +
         "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
         "它都铭记于心**\n\n" +
-        "> ![screenshot](http://tu-img-1.aixinxi.net/o_1c0imggpt3rkd9kkuv4sbiu5a.jpg-w.jpg)\n"  
+        "> ![screenshot](http://t1.aixinxi.net/o_1c122ehbfr2nui01e4g67d1pvaa.jpg-w.jpg)\n"  
     },
     "at": {
         "isAtAll": true

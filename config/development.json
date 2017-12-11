@@ -21,6 +21,18 @@
     "redirect_uri": "",
 
     // 钉钉签到机器人提醒
-    "dingtalk": ""
+    "dingtalk": "",
+
+        // 云片语音通知
+        "apikey": "",
+        "tpl_id_morning": 2084224,
+        "tpl_id_night": 2084498,
+        "mobile1": "",
+        "mobile2": "", 
+    
+        //工作日判断 https://www.nowapi.com/
+        "workday_apikey": "",
+        "workday_sign":  "",
+        "format": "json"
 
 }
