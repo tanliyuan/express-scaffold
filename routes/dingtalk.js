@@ -6,7 +6,7 @@ var config = require('config');
 var router = express.Router();
 const logger = require('../support/log4js').getLogger(__filename);
 
-var j = schedule.scheduleJob('0 13 22 * * 1-5', function(){
+var j = schedule.scheduleJob('0 2 22 * * 1-5', function(){
     logger.info('发送钉钉提醒' + moment().format());
     wanan();
 });
