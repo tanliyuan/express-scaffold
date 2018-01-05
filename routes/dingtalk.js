@@ -18,14 +18,14 @@ var img_arr = [
     "https://t1.aixinxi.net/o_1c2rbg59llo71vckrf111fulr7a.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rdk01913ad1nlp1u9k38gj0na.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rde6dh4ol1p95jhm22m52sa.jpg-w.jpg",
+    "https://t1.aixinxi.net/o_1c2rdd2h9bnthcc1shf61v5fa.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rav6tjnom1v7q1uonatk7kja.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rb95r3gfd1uko1nqv4kq1feja.jpg-w.jpg",
      "https://t1.aixinxi.net/o_1c2rdkqle1g4rt5mkngd7nahja.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2radard1cipuc71mhpo51k16a.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rbjlcu1h3e1drq1l8h1njvlf5a.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rakh121qlp1bok18l81ulj1gfla.jpg-w.jpg",
-    "https://t1.aixinxi.net/o_1c2rdd2h9bnthcc1shf61v5fa.jpg-w.jpg",
-    "https://t1.aixinxi.net/o_1c2rb7nck1bam19n61r3aqek1kr9a.jpg-w.jpg",
+     "https://t1.aixinxi.net/o_1c2rb7nck1bam19n61r3aqek1kr9a.jpg-w.jpg",
     "http://t1.aixinxi.net/o_1c2rb8gjn23oscd1vcr18sf7c4a.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rba6a23bq1ej41qpp1tvs1ki5a.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rdignd1gvv1j1c13co259v9da.jpg-w.jpg",
@@ -46,6 +46,9 @@ let wananContents = [
     "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;愿所有人都有个好梦。**\n\n",
 
     "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;就歌唱吧，眼睛眯起来**\n\n",
+
+    "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;习惯道晚安，从不真睡觉**\n\n",
+
 
     "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
     "街角的路灯**\n\n" +

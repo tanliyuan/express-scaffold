@@ -6,7 +6,7 @@ var config = require('config');
 var router = express.Router();
 const logger = require('../support/log4js').getLogger(__filename);
 
-var night = schedule.scheduleJob('0 14 22 * * *', function(){
+var night = schedule.scheduleJob('0 3 22 * * *', function(){
     logger.info('晚安提醒' + moment().format());
     workday(nightContent,moment().format("YYYYMMDD"), true, config.get('mobile1'));
 });
@@ -16,7 +16,7 @@ var morning = schedule.scheduleJob('0 39 8 * * *', function(){
     workday(morningContent, moment().format("YYYYMMDD"), true, config.get('mobile1'));
 });
 
-var night2 = schedule.scheduleJob('0 15 22 * * *', function(){
+var night2 = schedule.scheduleJob('0 3 22 * * *', function(){
     logger.info('晚安提醒' + moment().format());
     workday(nightContent,moment().format("YYYYMMDD"), true, config.get('mobile2'));
 });
