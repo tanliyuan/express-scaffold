@@ -23,9 +23,11 @@ var img_arr = [
     "https://t1.aixinxi.net/o_1c2rdc6m4fbk1e2315rienl654a.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rbbi4klc6fm1acm13k315v5a.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rav6tjnom1v7q1uonatk7kja.jpg-w.jpg",
+    "https://t1.aixinxi.net/o_1c2rdkqle1g4rt5mkngd7nahja.jpg-w.jpg",
+
     "https://t1.aixinxi.net/o_1c2rb95r3gfd1uko1nqv4kq1feja.jpg-w.jpg",
-     "https://t1.aixinxi.net/o_1c2rdkqle1g4rt5mkngd7nahja.jpg-w.jpg",
-    "https://t1.aixinxi.net/o_1c2radard1cipuc71mhpo51k16a.jpg-w.jpg",
+ 
+     "https://t1.aixinxi.net/o_1c2radard1cipuc71mhpo51k16a.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rbjlcu1h3e1drq1l8h1njvlf5a.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rakh121qlp1bok18l81ulj1gfla.jpg-w.jpg",
      "https://t1.aixinxi.net/o_1c2rb7nck1bam19n61r3aqek1kr9a.jpg-w.jpg",
@@ -59,6 +61,14 @@ let wananContents = [
     "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;王子能救出公主，**\n\n" +
     "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是因为恶龙从没想过伤害她。**\n\n", 
 
+    '',
+    
+    "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我去过的过去**\n\n" +
+    "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谁同行 谁远行**\n\n" +
+    "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那件风衣 叫做回忆**\n\n" ,
+
+
+
     "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
     "街角的路灯**\n\n" +
     "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
@@ -77,6 +87,7 @@ let wananContents = [
     "它都铭记于心**\n\n",
 ];
 var today = parseInt(moment().format('DD'));
+logger.info("----"  + today);
 
 let wananMsg = {
     "msgtype": "markdown",
