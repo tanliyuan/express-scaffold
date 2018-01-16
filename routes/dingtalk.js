@@ -28,10 +28,12 @@ var img_arr = [
     "https://t1.aixinxi.net/o_1c2rb95r3gfd1uko1nqv4kq1feja.jpg-w.jpg",
  
      "https://t1.aixinxi.net/o_1c2radard1cipuc71mhpo51k16a.jpg-w.jpg",
-    "https://t1.aixinxi.net/o_1c2rbjlcu1h3e1drq1l8h1njvlf5a.jpg-w.jpg",
-    "https://t1.aixinxi.net/o_1c2rakh121qlp1bok18l81ulj1gfla.jpg-w.jpg",
+     "https://t1.aixinxi.net/o_1c2rakh121qlp1bok18l81ulj1gfla.jpg-w.jpg",
      "https://t1.aixinxi.net/o_1c2rb7nck1bam19n61r3aqek1kr9a.jpg-w.jpg",
+     "https://t1.aixinxi.net/o_1c2rbjlcu1h3e1drq1l8h1njvlf5a.jpg-w.jpg",
+
     "http://t1.aixinxi.net/o_1c2rb8gjn23oscd1vcr18sf7c4a.jpg-w.jpg",
+ 
     "https://t1.aixinxi.net/o_1c2rba6a23bq1ej41qpp1tvs1ki5a.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rdignd1gvv1j1c13co259v9da.jpg-w.jpg",
      "https://t1.aixinxi.net/o_1c2rdb0mocu7u3a19dbflc1j0la.jpg-w.jpg",
@@ -67,6 +69,12 @@ let wananContents = [
     "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谁同行 谁远行**\n\n" +
     "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那件风衣 叫做回忆**\n\n" ,
 
+    '', '', '', '',
+
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;没梳的头发有点乱**\n\n' + 
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;屋檐上麻雀在逃难**\n\n' + 
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;嗓子的疼痛有点重**\n\n' + 
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这一天我什么都不想干**\n\n', 
 
 
     "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
