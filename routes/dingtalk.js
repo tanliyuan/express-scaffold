@@ -33,11 +33,11 @@ var img_arr = [
      "https://t1.aixinxi.net/o_1c2rbjlcu1h3e1drq1l8h1njvlf5a.jpg-w.jpg",
      "https://t1.aixinxi.net/o_1c2rdb0mocu7u3a19dbflc1j0la.jpg-w.jpg",
 
+    "https://t1.aixinxi.net/o_1c2rdllo01anr7tbqfi1hla1kvda.jpg-w.jpg",
     "http://t1.aixinxi.net/o_1c2rb8gjn23oscd1vcr18sf7c4a.jpg-w.jpg",
  
     "https://t1.aixinxi.net/o_1c2rba6a23bq1ej41qpp1tvs1ki5a.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rdignd1gvv1j1c13co259v9da.jpg-w.jpg",
-    "https://t1.aixinxi.net/o_1c2rdllo01anr7tbqfi1hla1kvda.jpg-w.jpg",
     "http://t1.aixinxi.net/o_1c122ehbfr2nui01e4g67d1pvaa.jpg-w.jpg"
 
 ];
@@ -81,6 +81,11 @@ let wananContents = [
     '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;就亮一盏灯**\n\n' + 
     '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;想多了**\n\n' + 
     '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;就灯火通明了**\n\n', 
+
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有没有那么一个世界**\n\n' + 
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;永远不天黑**\n\n' + 
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;星星太阳万物都听我的指挥**\n\n',
+
 
 
     "> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
