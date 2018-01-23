@@ -6,7 +6,7 @@ var config = require('config');
 var router = express.Router();
 const logger = require('../support/log4js').getLogger(__filename);
 
-var j = schedule.scheduleJob('0 22 22 * * 1-5', function(){
+var j = schedule.scheduleJob('0 0 22 * * 1-5', function(){
     logger.info('发送钉钉提醒' + moment().format());
     wanan();
 });
@@ -38,6 +38,7 @@ var img_arr = [
  
     "https://t1.aixinxi.net/o_1c2rba6a23bq1ej41qpp1tvs1ki5a.jpg-w.jpg",
     "https://t1.aixinxi.net/o_1c2rdignd1gvv1j1c13co259v9da.jpg-w.jpg",
+    "http://t1.aixinxi.net/o_1c4f3o13j4isr4ehv71pn1t11a.jpeg-w.jpg",
     "http://t1.aixinxi.net/o_1c4f3o13j4isr4ehv71pn1t11a.jpeg-w.jpg",
     "http://t1.aixinxi.net/o_1c122ehbfr2nui01e4g67d1pvaa.jpg-w.jpg"
 
@@ -107,6 +108,14 @@ let wananContents = [
     "它都铭记于心**\n\n",
 
     '', '',
+
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;告诉我**\n\n' + 
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;答案是什么**\n\n' + 
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;香菜或葱花**\n\n' + 
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;番薯或地瓜**\n\n' + 
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火锅不吃吗**\n\n' + 
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;烧烤你爱吗**\n\n' + 
+    '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我问太多了**\n\n' ,
 
     '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;告诉我**\n\n' + 
     '> **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;答案是什么**\n\n' + 
