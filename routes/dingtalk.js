@@ -134,8 +134,9 @@ let wananMsg = {
     "markdown": {
         "title": "考勤提醒", 
         "text": 
-        wananContents[today] +
-        "> ![screenshot](" + img_arr[today] + ")\n"  
+        wananContents[23] +
+        //"> ![screenshot](" + img_arr[today] + ")\n"  
+        "> ![screenshot](" + img_arr[23] + ")\n"  
     },
     "at": {
         "isAtAll": true
